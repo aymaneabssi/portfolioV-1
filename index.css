@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1e1e1e;
+  color: white;
+}
+header {
+  width: 100vw;
+}
+.NavSection {
+  height: 60px;
+  width: 100%;
+}
+.NavBar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.Logo,
+.Logo a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #569cd6;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Nav-options {
+  width: 20%;
+}
+.Nav-options ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-weight: 550;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+.Intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+}
+h1.typing::after {
+  content: '';
+  border-right: 2px solid white;
+  height: 90%;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
